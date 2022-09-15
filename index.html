@@ -88,15 +88,15 @@
                     </div>
                 
                 <div class="project__image">
-                    <div class="project__image__previous"><a class="next previous__button" href="#"></a></div>
                     <div class="img project__image__body">
                         <img src="./img/our-projects-2.jpg" alt="Stylish interior with two chairs">
                     </div>
-                    <div class="project__image__next"><a class="circle next__button" href="#"></a></div>
+                    <button onclick="location.href='#'" type="button" class="btn previous"></button>
+                    <button onclick="location.href='#'" type="button" class="btn next"></button>
                 </div>
             </div>
         </section>
-        <section class="white">
+        <section class="white online__control__section">
             <div class="container online__control">
                 <h3>online control</h3>
                 <div class="underline__image"></div>
@@ -110,7 +110,7 @@
                     <div class="application__form">
                         <div class="application__form-item">
                             <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="What is your name:">
+                            <input type="name" name="name" placeholder="What is your name:">
                         </div>
                         <div class="application__form-item">
                             <label type="tel" for="phone">Phone</label>
@@ -119,12 +119,13 @@
                         <input class="btn gold__button submit" type="submit" value="Submit">
                     </div>
                 <div class="application__form-footer">
-                    <label for="agree" class="label">
+                    <label class="label">
                         <input type="checkbox" class="checkbox" >
                         <span class="fake"></span>
                         <span class="text">I agree to the processing of personal data.</span>
                     </label>
                 </div>
+                <input class="btn gold__button submit mobile__submit" type="submit" value="Submit">
                 </form>
             </div>
         </section>
@@ -132,6 +133,7 @@
             <div class="container">
                 <div class="our__projects__header">
                     <h3>Types of repair</h3>
+                    <div class="underline__image2"></div>
                 </div>
                 <div class="our__projects__grid">
                     <div class="our__projects__card">
@@ -197,56 +199,63 @@
                 </div>
             </div>
         </section>
-        <section class="white">
-            <div class="our__benefits">
-                <div class="our__benefits__list">
-                    <ol>
-                        <li>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
-                        <li>Free metering</li>
-                        <li>Free consultation</li>
-                        <li>Get a cost estimate and the timing of your future repairs</li>
-                    </ol>
+        <section class="white our__benefits__section">
+            <div class="container">
+                <div class="our__benefits">
+                    <div class="our__benefits__list">
+                        <ol>
+                            <li>Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
+                            <li>Free metering</li>
+                            <li>Free consultation</li>
+                            <li>Get a cost estimate and the timing of your future repairs</li>
+                        </ol>
+                    </div>
+                    <div class="our__benefits__form">
+                        <p>Leave a request for free departure of the measurer</p>
+                        <form class="application__black" action="#">
+                            <div class="application__form__black">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" placeholder="What is your name:"><br>
+                                <label type="tel" for="phone">Phone</label>
+                                <input type="tel" name="phone" placeholder="Your phone number:"><br>
+                                <label type="email" for="email">Email</label>
+                                <input type="email" name="email" placeholder="Your email:"><br>
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox" >
+                                    <span class="fake"></span>
+                                    <span class="text">I agree to the processing of personal data.</span>
+                                  </label><br>
+                                <input class="btn gold__button" type="submit" value="Call the measurer">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="our__benefits__form">
-                    <p>Leave a request for free departure of the measurer</p>
-                    <form class="application__black" action="#">
-                        <div class="application__form__black">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="What is your name:"><br>
-                            <label type="tel" for="phone">Phone</label>
-                            <input type="tel" name="phone" placeholder="Your phone number:"><br>
-                            <label type="email" for="email">Email</label>
-                            <input type="email" name="email" placeholder="Your email:"><br>
-                            <input type="checkbox" name="agree" value="agree">
-                            <label for="agree"> I agree to the processing of personal data</label><br>
-                            <input class="btn gold__button" type="submit" value="Call the measurer">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="help__to__save">
-                <div class="circle">
-
-                </div>
-                <p>Help save 10 - 20% of the cost of materials</p>
             </div>
         </section>
-        <section class="white your__fantasies">
+        <section class="our__benefits__section-piggy">
+            <div class="container">
+                <div class="help__to__save">
+                    <div class="circle piggy"></div>
+                    <p>Help save 10 - 20% of the<br> cost of materials</p>
+                </div>
+            </div>
+        </section>
+        <section class="dark your__fantasies">
             <div class="container your__fantasies__projects">
                 <div class="your__fantasies__list">
-                    <h2>We realize your wildest fantasies</h2>
+                    <h2>We realize your<br> wildest fantasies</h2>
                     <ul>
                         <a class="active" href="#"><li>American classic</li></a>
-                        <a href="#"><li>Empire</li></a>
-                        <a href="#"><li>Classical</li></a>
-                        <a href="#"><li>Loft</li></a>
-                        <a href="#"><li>Minimalism</li></a>
-                        <a href="#"><li>Provence</li></a>
-                        <a href="#"><li>Romanticism</li></a>
-                        <a href="#"><li>Scandinavian style</li></a>
-                        <a href="#"><li>Mediterranean style</li></a>
-                        <a href="#"><li>High tech</li></a>
-                        <a href="#"><li>Eclecticism</li></a>
+                        <li><a href="#">Empire</a></li>
+                        <li><a href="#">Classical</a></li>
+                        <li><a href="#">Loft</a></li>
+                        <li><a href="#">Minimalism</a></li>
+                        <li><a href="#">Provence</a></li>
+                        <li><a href="#">Romanticism</a></li>
+                        <li><a href="#">Scandinavian style</a></li>
+                        <li><a href="#">Mediterranean style</a></li>
+                        <li><a href="#">High tech</a></li>
+                        <li><a href="#">Eclecticism</a></li>
                     </ul>
                 </div>
                 <div class="your__fantasies__gallery">
@@ -266,14 +275,14 @@
                 </div>
             </div>
         </section>
-        <section class="your__fantasies-mobile" style="display:none;">
-            <div class="container your__fantasies__projects">
-                <div class="your__fantasies__list">
-                    <h2>We realize your wildest fantasies</h2>
+        <section class="your__fantasies-mobile">
+            <div class="container your__fantasies__projects-mobile">
+                <div class="your__fantasies__list-mobile">
+                    <h2>We realize your<br> wildest fantasies</h2>
                 </div>
-                <div class="your__fantasies__gallery">
+                <div class="your__fantasies__gallery-mobile">
                     <ul>
-                        <li><img src="./img/our-projects-6.jpg" alt="Сhest of drawers with clock"></li>
+                        <li><img src="./img/your-fantasies.jpg" alt="Сhest of drawers with clock"></li>
                     </ul>
                     <button onclick="location.href='#'" type="button" class="btn previous"></button>
                     <button onclick="location.href='#'" type="button" class="btn next"></button>
@@ -284,7 +293,8 @@
             <div class="container">
                 <div class="clients__reviews__header">
                     <h3>our clients</h3>
-                    <p>80% of our customers recommend us to their friends and family.</p>
+                    <div class="underline__image3"></div>
+                    <p>80% of our customers recommend us to their<br> friends and family.</p>
                 </div>
                 <div class="clients__reviews__grid">
                     <div class="clients__reviews__item">
@@ -299,7 +309,7 @@
                         </div>
                         <div class="card__footer">
                             <div class="card__footer-left"><i></i><p>40 m2</p></div>
-                            <div class="card__footer-right">48 Days</div>
+                            <div class="card__footer-right"><i></i><p>48 Days</p></div>
                         </div>
                     </div>
                     <div class="clients__reviews__item">
@@ -314,7 +324,7 @@
                         </div>
                         <div class="card__footer">
                             <div class="card__footer-left"><i></i><p>90 м2</p></div>
-                            <div class="card__footer-right">128 Days</div>
+                            <div class="card__footer-right"><i></i><p>128 Days</p></div>
                         </div>
                     </div>
                     <div class="clients__reviews__item">
@@ -329,40 +339,51 @@
                         </div>
                         <div class="card__footer">
                             <div class="card__footer-left"><i></i><p>56 м2</p></div>
-                            <div class="card__footer-right">86 Days</div>
+                            <div class="card__footer-right"><i></i><p>86 Days</p></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="dark contact__information">
-            <div class="container">
-                <div class="contact__information__form">
-                    <h3>have any questions?</h3>
-                    <form class="application__black" action="#">
-                        <div class="application__form__black">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="What is your name:"><br>
-                            <label type="tel" for="phone">Phone</label>
-                            <input type="tel" name="phone" placeholder="Your phone number:"><br>
-                            <label type="email" for="email">Email</label>
-                            <input type="email" name="email" placeholder="Your email:"><br>
-                            <input type="checkbox" name="agree" value="agree">
-                            <label for="agree"> I agree to the processing of personal data</label><br>
-                            <input class="btn gold__button" type="submit" value="Submit">
+            <div class="container small__container">
+                <div class="contact__information__container">
+                    <div class="contact__information__form">
+                        <h3>have any questions?</h3>
+                        <form class="application__black" action="#">
+                            <div class="application__form__black">
+                                <div class="application__form__black-line">
+                                    <div class="application__form__black-line-item">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" placeholder="What is your name:">
+                                    </div>
+                                    <div class="application__form__black-line-item">
+                                        <label type="tel" for="phone">Phone</label>
+                                        <input type="tel" name="phone" placeholder="Your phone number:">
+                                    </div>
+                                </div>
+                                <label type="text" for="text">Question</label>
+                                <input type="text" name="question" placeholder="I want to know:"><br>
+                                <label class="label footer-lable">
+                                    <input type="checkbox" class="checkbox" >
+                                    <span class="fake"></span>
+                                    <span class="text">I agree to the processing of personal data.</span>
+                                </label>
+                                <input class="btn gold__button button-map" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact__information__map">
+                        <div class="contact__information__map-subheading">
+                            <h4>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</h4>
                         </div>
-                    </form>
-                </div>
-                <div class="contact__information__map">
-                    <div class="contact__information__map-subheading">
-                        <h4>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h4>
-                    </div>
-                    <div class="contact__information__map-icons">
-                        <a href="mailto:Admin@foofle.com" title="Mail to Us"><i class="mail"></i></a>
-                        <a href="https://www.instagram.com/" title="Instagram page"><i class="instagram"></i></a>
-                    </div>
-                    <div class="contact__information__map-img">
-                        <img src="./img/map.jpg" alt="Where to find us">
+                        <div class="contact__information__map-icons">
+                            <a href="mailto:Admin@foofle.com" title="Mail to Us"><i class="mail"></i></a>
+                            <a href="https://www.instagram.com/" title="Instagram page"><i class="instagram"></i></a>
+                        </div>
+                        <div class="contact__information__map-img">
+                            <a href="#" title="Where to find us"><img src="./img/map.jpg" alt="Where to find us"></a>
+                        </div>
                     </div>
                 </div>
             </div>
